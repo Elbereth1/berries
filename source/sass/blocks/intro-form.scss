@@ -1,0 +1,51 @@
+.intro-form {
+  padding: 64px 53px 124px;
+  background-image: url("../img/line-leaf.svg"),
+    url("../img/background/background-form-mobile.jpg");
+  background-size: auto, cover;
+  background-repeat: no-repeat;
+  background-color: $background;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/line-leaf.svg"),
+      url("../img/background/background-form-mobile@2x.jpg");
+    background-size: auto, cover;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/line-leaf.svg"),
+      url("../img/background/background-form-tablet.jpg");
+    background-size: auto, cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/line-leaf.svg"),
+        url("../img/background/background-form-tablet@2x.jpg");
+      background-size: auto, cover;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/line-leaf.svg"),
+      url("../img/background/background-form-desktop.jpg");
+    background-size: auto, cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/line-leaf.svg"),
+        url("../img/background/background-form-desktop@2x.jpg");
+      background-size: auto, cover;
+    }
+  }
+}
+
+.intro-form__title {
+  margin: 0 0 32px;
+}
+
+.intro-form__text {
+  line-height: 1.19;
+  text-align: center;
+  margin: 0;
+}

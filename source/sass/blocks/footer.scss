@@ -1,0 +1,23 @@
+.footer {
+  margin: 0 auto;
+  padding: 20px 26px;
+  background-color: $background;
+}
+
+.footer__list {
+  display: flex;
+  gap: 20px;
+  margin: 0 0 20px auto;
+  padding: 0;
+}
+
+.footer__link {
+  display: flex;
+  align-items: center;
+  color: $main-text;
+  justify-content: end;
+}
+
+.footer__link-img {
+  margin-left: 8px;
+}

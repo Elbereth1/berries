@@ -1,0 +1,16 @@
+body {
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  background-color: $white;
+  filter: drop-shadow(0 4px 4px rgba(88, 13, 101, 0.15));
+  color: $main-text;
+  margin: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}

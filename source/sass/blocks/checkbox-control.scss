@@ -1,0 +1,32 @@
+.checkbox-control__control-mark {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  border: 2px solid $accent_2;
+  border-radius: 3px;
+  color: #ff8282;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 16px;
+    height: 11px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    background-image: none;
+  }
+}
+
+.filter-list__input[type="checkbox"]:hover + .checkbox-control__control-mark, {
+  border-color: $accent_2_hov;
+}

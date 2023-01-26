@@ -1,0 +1,13 @@
+.radio-button {
+  padding-left: 36px;
+}
+
+.radio-button__control {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 21px;
+  height: 21px;
+  cursor: pointer;
+  border: 1px solid $accent_2;
+}

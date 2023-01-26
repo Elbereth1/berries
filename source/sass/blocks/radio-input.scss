@@ -1,0 +1,26 @@
+.radio-input[type="radio"] + .radio-button__control {
+  border-radius: 50%;
+}
+
+.radio-input[type="radio"]:hover + .radio-button__control,
+.radio-input[type="radio"]:active + .radio-button__control {
+  border-color: $accent_2_hov;
+}
+
+.radio-input:focus + .radio-button__control {
+  outline: 2px solid $main-text;
+}
+
+.radio-input[type="radio"]:checked + .radio-button__control::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 9px;
+  height: 9px;
+  background-color: $accent_2;
+  border-radius: 50%;
+  content: "";
+}

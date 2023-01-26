@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width-device-width, initial-scale=1">
+  <meta name="description" content="Сайт магазина ягод">
+  <title>Ягоды</title>
+  <link rel="preload" href="fonts/raleway-regular.woff2" as="font">
+  <link rel="preload" href="fonts/comfortaa-regular.woff2" as="font">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicon/152.svg" type="image/svg+xml">
+  <link rel="icon" href="img/favicon/favicon-32.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+</head>
+<body class="page__body">
+<div class="wrapper">
+  <header class="header">
+    <div class="wrapper header__wrapper">
+      <a class="logo" href="index.html">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/logo.svg">
+          <img class="logo__img" src="img/logo-mobile.svg" width="52" height="52" alt="Главная страница">
+        </picture>
+      </a>
+      <!--Для смены внешнего вида кнопки нужно заменить модификатор closed на open-->
+      <button class="btn-toggle btn-toggle--closed btn-toggle--hide" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list list">
+          <li class="nav__item">
+            <a class="nav__link link" href="#">Каталог</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link link" href="#">Новости</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link link" href="#">Контакты</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link link" href="form.html">Заказать</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+</div>
+<main class="main-container">
+  <div class="wrapper">
+    <section class="intro-form">
+      <h1 class="intro-form__title title">Закажи ягоды</h1>
+      <p class="intro-form__text">Мы соберем для вас ягоды и доставим их в удобном для вас виде - свежими или замороженными</p>
+    </section>
+  </div>
+  <div class="wrapper">
+    <section class="filter">
+      <h2 class="visually-hidden">Фильтр заказа</h2>
+      <form class="filter__form" method="post" action="echo.htmlacademy.ru">
+        <fieldset class="filter__group filter-group">
+          <legend class="filter-group__title subtitle">Выберите ягоды</legend>
+          <ul class="filter-group__list list filter-list">
+            <li class="filter-list__item">
+              <label class="filter-list__control checkbox-control" for="cowberry">
+                <input class="filter-list__input visually-hidden" id="cowberry" type="checkbox" name="cowberry" value="cowberry">
+                <span class="checkbox-control__control-mark"></span>
+                <span class="checkbox-control__checkbox-button">брусника</span>
+              </label>
+            </li>
+            <li class="filter-list__item">
+              <label class="filter-list__control checkbox-control">
+                <input class="filter-list__input visually-hidden" type="checkbox" name="cherry" value="cherry">
+                <span class="checkbox-control__control-mark"></span>
+                <span class="checkbox-control__checkbox-button">вишня</span>
+              </label>
+            </li>
+            <li class="filter-list__item">
+              <label class="filter-list__control checkbox-control">
+                <input class="filter-list__input visually-hidden" type="checkbox" name="blueberry" value="blueberry">
+                <span class="checkbox-control__control-mark"></span>
+                <span class="checkbox-control__checkbox-button">голубика</span>
+              </label>
+            </li>
+            <li class="filter-list__item">
+              <label class="filter-list__control checkbox-control">
+                <input class="filter-list__input visually-hidden" type="checkbox" name="blackberry" value="blackberry">
+                <span class="checkbox-control__control-mark"></span>
+                <span class="checkbox-control__checkbox-button">ежевика</span>
+              </label>
+            </li>
+            <li class="filter-list__item">
+              <label class="filter-list__control checkbox-control">
+                <input class="filter-list__input visually-hidden" type="checkbox" name="strawberry" value="strawberry">
+                <span class="checkbox-control__control-mark"></span>
+                <span class="checkbox-control__checkbox-button">клубника</span>
+              </label>
+            </li>
+            <li class="filter-list__item">
+              <label class="filter-list__control checkbox-control">
+                <input class="filter-list__input visually-hidden" type="checkbox" name="blueberry" value="dark blueberry">
+                <span class="checkbox-control__control-mark"></span>
+                <span class="checkbox-control__checkbox-button">клюква</span>
+              </label>
+            </li>
+            <li class="filter-list__item">
+              <label class="filter-list__control checkbox-control">
+                <input class="filter-list__input visually-hidden" type="checkbox" name="gooseberry" value="gooseberry">
+                <span class="checkbox-control__control-mark"></span>
+                <span class="checkbox-control__checkbox-button">крыжовник</span>
+              </label>
+            </li>
+            <li class="filter-list__item">
+              <label class="filter-list__control checkbox-control">
+                <input class="filter-list__input visually-hidden" type="checkbox" name="raspberry" value="raspberry">
+                <span class="checkbox-control__control-mark"></span>
+                <span class="checkbox-control__checkbox-button">малина</span>
+              </label>
+            </li>
+            <li class="filter-list__item">
+              <label class="filter-list__control checkbox-control">
+                <input class="filter-list__input visually-hidden" type="checkbox" name="cloudberry" value="cloudberry" disabled>
+                <span class="checkbox-control__control-mark"></span>
+                <span class="checkbox-control__checkbox-button">морошка</span>
+              </label>
+            </li>
+            <li class="filter-list__item">
+              <label class="filter-list__control checkbox-control">
+                <input class="filter-list__input visually-hidden" type="checkbox" name="blackberry" value="blackberry" disabled>
+                <span class="checkbox-control__control-mark"></span>
+                <span class="checkbox-control__checkbox-button">черника</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="filter__group filter-group">
+          <legend class="filter-group__title subtitle">Вид хранения</legend>
+          <ul class="filter-group__list list filter-list">
+            <li class="filter-list__item">
+              <label class="filter-list__control checkbox-control">
+                <input class="filter-list__input visually-hidden" type="checkbox" name="fresh" value="fresh berries">
+                <span class="checkbox-control__control-mark"></span>
+                <span class="checkbox-control__checkbox-button">свежие ягоды</span>
+              </label>
+            </li>
+            <li class="filter-list__item">
+              <label class="filter-list__control checkbox-control">
+                <input class="filter-list__input visually-hidden" type="checkbox" name="frozen" value="frozen berries">
+                <span class="checkbox-control__control-mark"></span>
+                <span class="checkbox-control__checkbox-button">замороженые ягоды</span>
+              </label>
+            </li>
+            <li class="filter-list__item">
+              <label class="filter-list__control checkbox-control">
+                <input class="filter-list__input visually-hidden" type="checkbox" name="mix berries" value="mix berries">
+                <span class="checkbox-control__control-mark"></span>
+                <span class="checkbox-control__checkbox-button">ягодные миксы</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="filter__group filter-group">
+          <legend class="filter-group__title subtitle">Способ доставки</legend>
+          <ul class="filter-group__list list filter-list">
+            <li class="filter-list__item">
+              <label class="filter-list__control radio-button">
+                <input class="visually-hidden filter-list__input radio-input" type="radio" name="input" value="delivery" checked>
+                <span class="radio-button__control"></span>
+                <span class="radio-button__label">Доставка(по СПБ в пределах КАД)</span>
+              </label>
+            </li>
+            <li class="filter-list__item">
+              <label class="filter-list__control radio-button">
+                <input class="visually-hidden filter-list__input radio-input" type="radio" name="input" value="pickup">
+                <span class="radio-button__control"></span>
+                <span class="radio-button__label">Самовывоз (Набережная Обводного канала, 101)</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="filter__group filter-group filter-contacts">
+          <legend class="filter-contacts__title subtitle">Ваши контакты</legend>
+          <p class="filter-contacts__name-wrapper">
+            <label class="filter-contacts__control">Имя
+              <input class="filter-contacts__input filter-contacts__input--first" type="text" name="name" placeholder="Как к вам обращаться?" required>
+            </label>
+          </p>
+          <div class="filter-contacts__inputs-wrapper">
+            <p class="filter-contacts__name-wrapper">
+              <label class="filter-contacts__control">Телефон
+                <input class="filter-contacts__input" type="text" name="phone" placeholder="+7 ххх ххх хх хх" required>
+              </label>
+            </p>
+            <p class="filter-contacts__name-wrapper">
+              <label class="filter-contacts__control">Email
+                <input class="filter-contacts__input" type="email" name="email" placeholder="Ваш email" required>
+              </label>
+            </p>
+          </div>
+          <p class="filter-contacts__name-wrapper">
+            <label class="filter-contacts__control">Адрес
+              <textarea class="filter-contacts__input filter-contacts__input--textarea-first" name="address" placeholder="Адрес в Санкт-Петербурге" rows="3" required ></textarea>
+            </label>
+          </p>
+          <p class="filter-contacts__name-wrapper">
+            <label class="filter-contacts__control ">Пожелания к заказу
+              <textarea class="filter-contacts__input" name="comment" placeholder="Чем мы можем вам помочь?" rows="5"></textarea>
+            </label>
+          </p>
+        </fieldset>
+        <button class="filter__button link link--accent" type="submit">Заказать</button>
+      </form>
+    </section>
+  </div>
+  <div class="wrapper">
+    <section class="contacts">
+      <div class="contacts__first-wrapper">
+        <h2 class="contacts__title title">Где забрать ягоды? </h2>
+        <p class="contacts__subtitle">Забери ягоды с нашего склада по адресу:</p>
+        <div class="contacts__wrapper">
+          <ul class="contacts__list list list-contacts">
+            <li class="list-contacts__item list-contacts__item--first">
+              <p class="list-contacts__text">Набережная Обводного канала, 101</p>
+            </li>
+            <li class="list-contacts__item list-contacts__item--second">
+              <p class="list-contacts__text">+ 7 910 524 41 18</p>
+            </li>
+            <li class="list-contacts__item list-contacts__item--third">
+              <p class="list-contacts__text">info@yagoda.ru</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="contacts__map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.1325205380965!2d30.329035315947927!3d59.91334798186696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469630519ea47935%3A0x3458dd62ea82672d!2z0L3QsNCx0LXRgNC10LbQvdCw0Y8g0J7QsdCy0L7QtNC90L7Qs9C-INC60LDQvdCw0LvQsCwgMTAxLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkwMDEz!5e0!3m2!1sru!2sru!4v1674140585747!5m2!1sru!2sru"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+  </div>
+  <div class="wrapper">
+    <footer class="footer">
+      <a class="footer__logo" href="#">
+      </a>
+      <ul class="footer__list list social">
+        <li class="social__item">
+          <a class="social__link link" href="#" aria-label="Телега"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link link" href="#" aria-label="Вконтакте"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link link" href="#" aria-label="Ютубчик"></a>
+        </li>
+      </ul>
+      <a class="footer__link link copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    </footer>
+  </div>
+</main>
+</body>
+</html>

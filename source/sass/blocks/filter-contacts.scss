@@ -1,0 +1,54 @@
+.filter-contacts__title {
+  margin: 0 0 32px;
+}
+
+.filter-contacts__name-wrapper {
+  margin: 0;
+}
+
+.filter-contacts__control {
+  margin: 0 0 0 10px;
+}
+
+.filter-contacts__input {
+  padding: 16px 12px;
+  border: 1px solid $accent_2;
+  border-radius: 20px;
+  width: 100%;
+  margin-top: 4px;
+
+  &--first {
+    @media (min-width: $tablet-width) {
+      width: 300px;
+    }
+  }
+
+  &:hover,
+  &:active {
+    border-color: $accent_2_hov;
+  }
+
+  &:invalid {
+    border: transparent;
+    outline: 1px solid $error;
+  }
+
+  &:disabled {
+    border: transparent;
+    outline: 1px solid $shadow;
+  }
+
+  &--textarea-first {
+    @media (min-width: $tablet-width) {
+      max-height: 52px;
+    }
+  }
+}
+
+.filter-contacts__inputs-wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+}

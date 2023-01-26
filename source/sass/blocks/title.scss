@@ -1,0 +1,15 @@
+.title {
+  font-family: "Comfortaa", cursive;
+  font-size: 36px;
+  line-height: 1.11;
+  color: $accent_2;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 52px;
+  }
+}
