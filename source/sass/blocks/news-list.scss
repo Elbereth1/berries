@@ -4,17 +4,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 268px;
 
   @media (min-width: $tablet-width) {
     justify-content: center;
     gap: 34px 20px;
     width: 348px;
-  }
-
-  @media (min-width: $desktop-width) {
-    gap: 34px 24px;
-    width: 360px;
   }
 }
 
@@ -33,6 +27,8 @@
     padding: 32px 36px 150px;
     font-size: 16px;
     line-height: 1.25;
+    gap: 34px 24px;
+    width: 360px;
   }
 }
 
